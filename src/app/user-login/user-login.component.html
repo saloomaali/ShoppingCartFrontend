@@ -1,26 +1,27 @@
+<app-navbar></app-navbar>
 <div class="conatiner">
     <div class="row g-5 mt-4">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
             <h1>USER LOGIN</h1>
         </div>
         <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-            <img src="assets/images/userLogin.png" height="600px" width="1000px" alt="">
+            <img src="assets/images/userLogin.png" height="500px" width="800px" alt="">
         </div>
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-6">
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             
                 <div class="row g-5 mt-5">
                   
                     
                     <div class="col col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                         <label for="" class="form-label">Email_Id</label>
-                        <input type="text" class="form-control">
+                        <input name = "emailId" [(ngModel)] = "emailId" type="text" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                         <label for="" class="form-label">Password</label>
-                        <input type="password" class="form-control">
+                        <input name = "password" [(ngModel)] = "password" type="password" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 text-center">
-                        <button class="btn btn-dark">Login</button>
+                        <button (click) = "readValue()" class="btn btn-dark">Login</button>
                     </div>
                     
                     <div class="col col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 text-center">

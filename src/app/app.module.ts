@@ -13,6 +13,9 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { CarcdProductComponent } from './carcd-product/carcd-product.component';
 import { ProductNavbarComponent } from './product-navbar/product-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component'
 
 const myRouter:Routes = [
   {
@@ -55,12 +58,15 @@ const myRouter:Routes = [
     UserLoginComponent,
     CarcdProductComponent,
     ProductNavbarComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRouter),
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],

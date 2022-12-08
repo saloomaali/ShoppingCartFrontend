@@ -1,20 +1,18 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">ShoppingCart</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/cardProduct">View all Products</a>
-          </li>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jyhkH6JDqld6vG7fuKXzzUXSATf45FNx0ys_2uvgqAuad8RiubTyJUwfZ1zBnQJCuk8&usqp=CAU" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+
+      ShoppingCart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" routerLink="/cardProduct">View All Products</a>
         
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+        <a class="nav-link btn btn-outline-light" routerLink="/userLogin">Logout</a> 
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

@@ -4,7 +4,7 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             
             <table class="table">
-                <tbody>
+                <thead>
                     <tr>
                         <th>Product Name</th>
                         <th>Image</th>
@@ -12,15 +12,17 @@
                         <th>Description</th>
                         <th>Price</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let i of data">
+                        <td>{{i.name}} </td>
+                        <td><img height="200px" width="200px" src={{i.image}}  alt=""></td>
+                        <td>{{i.category}} </td>
+                        <td>{{i.description}} </td>
+                        <td>{{i.price}} </td>
+                    </tr>
                 </tbody>
                 
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
             </table>
         </div>
     </div>
