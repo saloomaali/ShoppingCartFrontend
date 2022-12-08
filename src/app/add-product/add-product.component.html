@@ -6,27 +6,27 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)] = "name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Image</label>
-                    <input type="file" class="form-control">
+                    <input name="image" [(ngModel)] = "image" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Category</label>
-                    <input type="text" class="form-control">
+                    <input name="category" [(ngModel)] = "category" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Description</label>
-                    <textarea name="" id="" cols="20" rows="5" class="form-control"></textarea>
+                    <textarea name="description" [(ngModel)] = "description" name="" id="" cols="20" rows="5" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Price</label>
-                    <input type="text" class="form-control">
+                    <input name="price" [(ngModel)] = "price" type="text" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-dark">ADD</button>
+                    <button (click) = "readValue()" class="btn btn-dark">ADD</button>
                 </div>
                 
             </div>

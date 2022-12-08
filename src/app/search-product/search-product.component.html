@@ -5,10 +5,36 @@
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Product Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)] = "name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-dark">SEARCH</button>
+                    <button (click) = "readValue()" class="btn btn-dark">SEARCH</button>
+                </div>
+                <div class="row mt-4">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        
+                        <table class="table" *ngFor = "let i of searchData">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Image</th>
+                                    <th>Category</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td>{{i.name}} </td>
+                                    <td><img height="200px" width="200px" src={{i.image}}  alt=""></td>
+                                    <td>{{i.category}} </td>
+                                    <td>{{i.description}} </td>
+                                    <td>{{i.price}} </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
