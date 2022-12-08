@@ -11,6 +11,8 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { CarcdProductComponent } from './carcd-product/carcd-product.component';
+import { ProductNavbarComponent } from './product-navbar/product-navbar.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 
 const myRouter:Routes = [
   {
@@ -51,7 +53,9 @@ const myRouter:Routes = [
     ViewProductComponent,
     SearchProductComponent,
     UserLoginComponent,
-    CarcdProductComponent
+    CarcdProductComponent,
+    ProductNavbarComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
