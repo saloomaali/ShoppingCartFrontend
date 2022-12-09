@@ -21,14 +21,22 @@ export class UserLoginComponent {
     this.api.userLogin(data).subscribe(
       (response:any)=>{
 
-        if(response.length == 0){
+        if(response.status == "success"){
 
-          alert("Invalid username or password")
-          window.location.reload()
+          let userId  = response.userId
+          console.log(userId)
+          localStorage.setItem("userInformation", userId)
+          this.route.navigate(['/cardProduct'])
+         
           
         }
         else{
-          this.route.navigate(['/cardProduct'])
+          console.log(response.status)
+          alert("Invalid username or password")
+
+          window.location.reload()
+          
+          
         }
       }
     )
